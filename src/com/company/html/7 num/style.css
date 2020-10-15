@@ -1,0 +1,19 @@
+H1 {
+  color: yellowgreen;
+  font-size: 150%;
+  font-family: Arial, Verdana, sans-serif;
+  text-align: center;
+}
+P {
+  padding-left: 20px;
+color: darkmagenta;
+    font-size: 120%;
+}
+H {
+    color: aqua;
+    font-size: 120%;
+}
+body { 
+background: #A66B00; 
+color: #9322cc; 
+    } 
