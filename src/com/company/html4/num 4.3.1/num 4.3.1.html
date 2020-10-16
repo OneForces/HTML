@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>text-decoration</title>
+  <style>
+   .table_blur {
+  background: #f5ffff;
+  border-collapse: collapse;
+  text-align: left;
+}
+.table_blur th {
+  border-top: 1px solid #777777;	
+  border-bottom: 1px solid #777777; 
+  box-shadow: inset 0 1px 0 #999999, inset 0 -1px 0 #999999;
+  background: green;
+  color: white;
+  padding: 10px 15px;
+  position: relative;
+}
+.table_blur th:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 25%;
+  height: 25%;
+  width: 100%;
+}
+.table_blur tr:nth-child(odd) {
+  background: #ebf3f9;
+}
+.table_blur th:first-child {
+  border-left: 1px solid #777777;	
+  border-bottom:  1px solid #777777;
+  box-shadow: inset 1px 1px 0 #999999, inset 0 -1px 0 #999999;
+}
+.table_blur th:last-child {
+  border-right: 1px solid #777777;
+  border-bottom:  1px solid #777777;
+  box-shadow: inset -1px 1px 0 #999999, inset 0 -1px 0 #999999;
+}
+.table_blur td {
+  border: 1px solid #e3eef7;
+  padding: 10px 15px;
+  position: relative;
+  transition: all 0.5s ease;
+}
+.table_blur tbody:hover tr:hover td {
+ background: #f3bd48; /* Цвет фона при наведении */
+    color: #fff; /* Цвет текста при наведении */
+}
+  </style> 
+ </head> 
+ <body>
+   <table class="table_blur">
+  <tr>
+    <th>Company</th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    </tr>
+  <tr>
+    <td>Пора в армию</td>
+    <td>Летом</td>
+    <td>Осенью</td>
+    <td>Зимой</td>
+    <td>Весной</td>
+    </tr>
+  <tr>
+    <td>Курсовая работа</td>
+    <td>HTML</td>
+    <td>JAVA</td>
+    <td>C++</td>
+    <td>PASCAL</td>
+    </tr>
+  <tr>
+    <td>Собаки</td>
+    <td>Платон</td>
+    <td>ВанФорс</td>
+    <td>Рим</td>
+    <td>Степа</td>
+    </tr>
+  <tr>
+    <td>Фильмы</td>
+    <td>Смешарики</td>
+    <td>Терминатор</td>
+    <td>Я иду домой</td>
+    <td>Я уже дома</td>
+    </tr>
+</table>
+ </body>
+</html>
