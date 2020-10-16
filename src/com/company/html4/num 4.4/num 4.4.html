@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Батарейка</title>
+  <style>
+   .b {
+    width: 160px; 
+    height: 60px; 
+    border: 5px solid #000;
+    margin-bottom: 10px;
+    position: relative; 
+   }
+   .b::before, .b::after {
+    content: '';
+    position: absolute;
+   }
+   .b::after { 
+    width: 10px;
+    height: 20px;
+    background: #000;
+    right: -10px; top: 15px;
+   }
+   .b::before { height: 100%; }
+   .low::before { 
+    width: 20%;
+    background: #ED1C24;
+   }
+   .medium::before { 
+    width: 70%;
+    background: #FFC60B;
+   }
+   .high::before { 
+    width: 100%;
+    background: #00A055;
+   }
+  </style>
+ </head>
+ <body>
+  <div class="b low"></div>
+  <div class="b medium"></div>
+  <div class="b high"></div>
+ </body>
+</html>
