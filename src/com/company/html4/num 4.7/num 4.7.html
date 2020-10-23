@@ -1,0 +1,224 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+<meta charset="utf-8" /> 
+<style>
+    .prognoz{ 
+font-size:25px; 
+} 
+
+button { 
+border: none; 
+background: #ffffff; 
+border-radius: 15px; 
+text-align: center; 
+font-size: 15px; 
+position: absolute; 
+transition: .4s; 
+background: rgba(200, 196, 200, 0.78); 
+} 
+
+button:hover { 
+transition: .4s; 
+color: #000000; 
+background: rgba(144, 142, 142, 0.75); 
+} 
+
+
+#one { 
+margin-left: 10px; 
+margin-top: 5px; 
+} 
+
+#two { 
+margin-left: 250px; 
+margin-top: 5px; 
+} 
+
+td { 
+width: 120px; 
+} 
+td:hover{
+padding: 5px; /*otstupi*/
+border:solid; 
+border-color:#808080; 
+border-width:2px; 
+} 
+
+.today{ 
+font-size:20px; 
+padding:0; 
+} 
+
+.sep{ 
+font-size:15px; 
+color:#808080; 
+} 
+
+.first img { 
+margin-top:5px; 
+width: 70px; 
+height: 50px; 
+} 
+
+.second img{ 
+margin-top:5px; 
+width: 70px; 
+height: 50px; 
+} 
+
+.third img { 
+margin-top: 5px; 
+width: 50px; 
+height: 50px; 
+} 
+
+.fourth img { 
+margin-top: 5px; 
+width: 50px; 
+height: 50px; 
+} 
+
+.fifth img { 
+margin-top: 5px; 
+width: 70px; 
+height: 50px; 
+} 
+
+.fifth { 
+color: gray; 
+} 
+
+.sixth img { 
+margin-top: 5px; 
+width: 70px; 
+height: 50px; 
+} 
+
+
+.sixth{ 
+color:gray; 
+} 
+
+.seventh img { 
+margin-top: 5px; 
+width: 50px; 
+height: 50px; 
+} 
+
+.eighth img { 
+margin-top: 5px; 
+width: 70px; 
+height: 50px; 
+} 
+
+.day{ 
+font-size:20px; 
+margin-top:20px; 
+} 
+
+.night { 
+font-size: 15px; 
+color: black; 
+} 
+
+.how { 
+margin-top:10px; 
+font-size: 15px; 
+color: black; 
+}
+    </style>
+</head> 
+<body> 
+<span class="prognoz"><b>Прогноз на 10 дней</b></span> 
+<button id="one">Подробный прогноз на 10 дней</button> 
+<button id="two">На месяц</button> 
+<div> 
+<table class="weather"> 
+<tr> 
+<td> 
+<div class="first"> 
+<div class="today">Сегодня</div> 
+<div class="sep">29 сент</div> 
+<img src="/Users/oneforce/Documents/html4/num 4.7/1.png"/> 
+<div class="day"><b>+10&deg;</b></div> 
+<div class="night">+4&deg;</div> 
+<div class="how">Облачно с<br />прояснениями</div> 
+</div> 
+</td> 
+<td> 
+<div class="second"> 
+<div class="today">Ср</div> 
+<div class="sep">30 сент</div> 
+<img src="/Users/oneforce/Documents/html4/num 4.7/1.png" /> 
+<div class="day"><b>+13&deg;</b></div> 
+<div class="night">+1&deg;</div> 
+<div class="how">Облачно с<br />прояснениями</div> 
+</div> 
+</td> 
+<td> 
+<div class="third"> 
+<div class="today">Чт</div> 
+<div class="sep">1 окт</div> 
+<img src="/Users/oneforce/Documents/html4/num 4.7/2.png" /> 
+<div class="day"><b>+14&deg;</b></div> 
+<div class="night">+6&deg;</div> 
+<div class="how">Малооблачно<br /><br /></div> 
+
+</div> 
+</td> 
+<td> 
+<div class="fourth"> 
+<div class="today">Пт</div> 
+<div class="sep">2 окт</div> 
+<img src="/Users/oneforce/Documents/html4/num 4.7/2.png" /> 
+<div class="day"><b>+14&deg;</b></div> 
+<div class="night">+5&deg;</div> 
+<div class="how">Малооблачно<br /><br /></div> 
+</div> 
+</td> 
+<td> 
+<div class="fifth"> 
+<div class="today">Сб</div> 
+<div class="sep">3 окт</div> 
+<img src="/Users/oneforce/Documents/html4/num 4.7/3.png" /> 
+<div class="day"><b>+14&deg;</b></div> 
+<div class="night">+3&deg;</div> 
+<div class="how">Облачно с<br />прояснениями</div> 
+</div> 
+</td> 
+<td> 
+<div class="sixth"> 
+<div class="today">Вс</div> 
+<div class="sep">4 окт</div> 
+<img src="/Users/oneforce/Documents/html4/num 4.7/3.png" /> 
+<div class="day"><b>+13&deg;</b></div> 
+<div class="night">+2&deg;</div> 
+<div class="how">Облачно с<br />прояснениями</div> 
+</div> 
+</td> 
+<td> 
+<div class="seventh"> 
+<div class="today">Пн</div> 
+<div class="sep">5 окт</div> 
+<img src="/Users/oneforce/Documents/html4/num 4.7/4.png" /> 
+<div class="day"><b>+11&deg;</b></div> 
+<div class="night">0&deg;</div> 
+<div class="how">Ясно<br /><br /></div> 
+</div> 
+</td> 
+<td> 
+<div class="eighth"> 
+<div class="today">Вт</div> 
+<div class="sep">6 окт</div> 
+<img src="/Users/oneforce/Documents/html4/num 4.7/5.png" /> 
+<div class="day"><b>+10&deg;</b></div> 
+<div class="night">+5&deg;</div> 
+<div class="how">Пасмурно<br /><br /></div> 
+</div> 
+</td> 
+</tr> 
+</table> 
+</div> 
+</body> 
+</html>
