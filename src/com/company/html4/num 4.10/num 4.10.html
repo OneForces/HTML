@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Тег DIV</title>
+  <style type="text/css">
+nav { background: white; } /*формирование маркированного списка*/
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a { /*положение маркиованного списка*/
+  text-decoration: none;
+  outline: none;
+  display: block;
+  transition: .4s ease-in-out;
+}
+.topmenu { /*расположение меню*/
+  text-align: center;
+  padding: 10px 0;
+}
+.topmenu > li { /*формирование горизонтального вида*/
+  display: inline-block;
+  position: relative;
+}
+.topmenu > li:after { /*измениние стиля выпадающего меню*/
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1px;
+  height: 12px;
+  background: #d2d2d2;
+  top: 16px;
+  box-shadow: 4px -2px 0 #d2d2d2;
+  transform: rotate(30deg);
+}
+.topmenu > li > a { /*оформление шапки*/
+  padding: 12px 26px;
+  color: #767676;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Exo 2', sans-serif;
+}
+.topmenu li a:hover { color: #c0a97a; } /*смена цвета*/
+.submenu { /*скрытое меню марк списка*/
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 210px;
+  margin-left: -105px;
+  background: #fafafa;
+  border: 1px solid #ededed;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(.8);
+  transition: .4s ease-in-out;
+}
+.submenu li a { /*оформление выпад. списка*/
+  padding: 10px 0;
+  margin: 0 10px;
+  border-bottom: 1px solid #efefef;
+  font-size: 12px;
+  color: #484848;
+  font-family: 'Kurale', serif;
+}
+.topmenu > li:hover .submenu { /*само выпадающее меню*/
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+  </style> 
+ </head>
+ <body>
+<nav>
+  <ul class="topmenu">
+    <li><a href="">кошки</a></li>
+    <li><a href="">собаки</a></li>
+    <li><a href="">некошки</a>
+       <ul class="submenu">
+    <li><a href="">рыжие</a></li>
+     <li><a href="">платон</a></li>
+     <li><a href="">веселые</a></li>
+     <li><a href="">такса</a></li>
+     </ul>
+    </li>
+    <li><a href="">несобаки</a>
+    </li>
+    <li><a href="">телефон</a></li>
+  </ul>
+</nav>
+ </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Тег DIV</title>
+  <style type="text/css">
+      p{ 
+font-size: 200%; 
+} 
+body{ 
+margin: 100px; 
+perspective: 1000px; 
+perspective-origin: center; 
+} 
+.container{ 
+margin-left: auto; 
+margin-right: auto; 
+width: 300px; 
+height: 100px; 
+transform-style: preserve-3d; 
+transition: transform 0.5s; 
+float: bottom; 
+} 
+.side{ 
+position: absolute; 
+width: 300px; 
+height: 100px; 
+} 
+.front{ 
+border: 1px solid black; 
+transform: translateZ(50px); 
+background: linear-gradient(to bottom, red, purple); 
+box-shadow: inset 0px 0px 10px 1px black; 
+color: white; 
+} 
+.back{ 
+border: 1px solid black; 
+transform: translateY(50px) rotateX(-90deg); 
+background: linear-gradient(to left, green, yellow); 
+box-shadow: inset 0px 0px 10px 1px black; 
+} 
+.container:hover{ 
+transform: rotateX(90deg); 
+} 
+   .block1 { 
+    width: 200px;
+    height: 200px; /*square*/
+    background: blue;
+    padding: 5px;
+    padding-right: 5px; 
+    display: block;
+  position: absolute;
+  left: 0;
+  top: 25%;
+   }
+      .block1:hover {
+          background: linear-gradient(to top, #fefcea, #f1da36);
+          box-shadow: inset 1em 1em gold;
+          transform: rotate3d(2, 2, 6, 90deg);
+          transition:  2s;
+      }
+      
+         .block2 { 
+    width: 200px;
+    height: 200px; /*square*/
+    background: blue;
+    padding: 5px;
+    padding-right: 5px; 
+    display: block;
+  position: absolute;
+  left: 220px;
+  top: 120%;
+   }
+      .block2:hover {
+          background: linear-gradient(to top, green, #f1da36);
+          box-shadow: inset 1em 1em gold;
+          transform: scale(2);
+          transition:  2s;
+      }
+      
+         .block3 { 
+    width: 200px;
+    height: 200px; /*square*/
+    background: blue;
+    padding: 5px;
+    padding-right: 5px; 
+    display: block;
+  position: absolute;
+  left: 440px;
+  top: 120%;
+   }
+      .block3:hover {
+          background: linear-gradient(to top, red, #f1da36);
+          box-shadow: inset 1em 1em gold;
+          transform: scaleX(2);
+          transition:  2s;
+      }
+  </style> 
+ </head>
+ <body>
+<div class="container"> 
+<div class="front side" align = "center";><p> Tекст </div> 
+<div class="back side" align = "center";><p> Tекст №2 </div> 
+</div>
+     <p><button class="block2">Кнопка с текстом</button></p>
+     <p><button class="block3">Кнопка с текстом</button></p>
+ </body>
+</html>
