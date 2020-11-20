@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>123</title>
+</head>
+<body>
+<script>
+//9.1
+var str = 'я учу javascript!' 
+document.write(str.length);
+//9.2
+var str = 'я учу javascript!'; 
+document.write(str.substr(2, 3));
+document.write(str.substring(2, 5));
+document.write(str.slice(2, 5));
+//9.3
+var str = 'я учу javascript!'; 
+document.write(str.indexOf('учу'));
+//9.4
+var str = 'я учу javascript!'; 
+var n = 10; 
+if (str.length > n) { 
+var result = str.slice(0, 10); 
+alert(result + '...') 
+} else if (str.length < n) { 
+var result = str; 
+alert(result) 
+}
+</script>
+</body>
+</html>
