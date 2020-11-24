@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>753</title>
+	<style>
+		input {
+			width: 200px;
+		}
+	</style>
+	<script>
+		function go(elem){
+			var text = document.getElementById('text');
+			text.innerHTML = elem.value;
+		}
+	</script>
+</head>
+<body>
+	<input type="text" value="" placeholder="Пример" id="test" onkeyup="go(this)">
+	<span id="text"></span>
+</body>
+</html>

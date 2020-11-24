@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>754</title>
+	<style>
+		input {
+			width: 200px;
+		}
+	</style>
+	<script>
+		function go(){
+			var elements = document.getElementsByTagName('a');
+			for (var i = 0; i < elements.length; i++){
+				elements[i].innerHTML = elements[i].innerHTML+' ('+elements[i].getAttribute('href')+')';
+			}
+		}
+	</script>
+</head>
+<body>
+	<a href="http://google.ru">ссылка 1</a><br><br>
+	<a href="http://tut.by">ссылка 2</a><br><br>
+	<a href="http://yandex.ru">ссылка 3</a><br><br>
+	<input type="submit" value="Нажмите на меня!"  onclick="go()">
+</body>
+</html>
