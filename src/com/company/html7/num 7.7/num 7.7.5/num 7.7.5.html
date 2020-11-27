@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>775</title>
+	<style>
+		#wrapper, #test {
+			text-align: center;
+		}
+	</style>
+	<script>
+		function go(){
+			window.timerId = window.setInterval(timer, 1000);
+			document.getElementById('go').disabled = true;
+		} 		function go(){
+			window.timerId = window.setInterval(timer, 1000);
+			document.getElementById('go').disabled = true;
+			document.getElementById('stop').disabled = false;
+		}
+		function stop(){
+			window.clearInterval(window.timerId);
+			document.getElementById('go').disabled = false;
+			document.getElementById('stop').disabled = true;
+		}
+		function timer(){
+			var img1 = document.getElementById('img1');
+			var img2 = document.getElementById('img2');
+			var img3 = document.getElementById('img3');
+			var img4 = document.getElementById('img4');
+			var img5 = document.getElementById('img5');
+			var img6 = document.getElementById('img6');
+			var tmp = img1.src;
+			img1.src = img2.src;
+			img2.src = img3.src;
+			img3.src = img4.src;
+			img4.src = img5.src;
+			img5.src = img6.src;
+			img6.src = tmp;
+		}
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<img src="/Users/oneforce/Documents/курсач/chief/1.jpg" id="img1">
+		<img src="/Users/oneforce/Documents/курсач/chief/2.jpg" id="img2">
+		<img src="/Users/oneforce/Documents/курсач/chief/3.jpg" id="img3">
+		<img src="/Users/oneforce/Documents/курсач/chief/4.jpg" id="img4">
+		<img src="/Users/oneforce/Documents/курсач/chief/5.jpg" id="img5">
+		<img src="/Users/oneforce/Documents/курсач/chief/6.jpg" id="img6">
+		<p>
+			<input type="submit" value="Start" onclick="go()" id="go">
+			<input type="submit" value="Stop" onclick="stop()" id="stop" disabled>
+		</p>
+	</div>
+</body>
+</html>

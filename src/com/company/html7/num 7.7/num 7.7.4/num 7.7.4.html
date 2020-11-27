@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>774</title>
+	<style>
+		#wrapper, #test {
+			text-align: center;
+		}
+	</style>
+	<script>
+        function go(){
+			window.timerId = window.setInterval(timer, 1000);
+		}
+		function timer(){
+			if(window.number == undefined || window.number == 3) {
+				window.number = 1;
+			} else window.number = window.number + 1;
+			var img = document.getElementById('img');
+			img.src = 'chief/'+window.number+'.jpg'
+		}
+	</script>
+</head>
+<body onload="go()">
+	<div id="wrapper">
+		<img src="/Users/oneforce/Documents/курсач/chief/1.jpg" id="img">
+	</div>
+</body>
+</html>

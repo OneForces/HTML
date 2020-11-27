@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>772</title>
+	<style>
+		input {
+			width: 200px;
+		}
+		#wrapper, #test {
+			text-align: center;
+		}
+		#test {
+			font-size: 24px;
+		}
+	</style>
+	<script>
+		function go(){
+			window.timerId = window.setInterval(timer, 500);
+			document.getElementById('go').disabled = true;
+			document.getElementById('stop').disabled = false;
+		}
+		function stop(){
+			window.clearInterval(window.timerId);
+			document.getElementById('go').disabled = false;
+			document.getElementById('stop').disabled = true;
+		}
+		function timer(){
+			var test = document.getElementById('test');
+			test.innerHTML = parseInt(test.innerHTML)+1;
+		}
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<p id="test">
+			0
+		</p>
+		<input type="submit" value="Тыкай"  onclick="go()" id="go">
+		<input type="submit" value="Останавливай"  onclick="stop()"  id="stop" disabled>
+	</div>
+</body>
+</html>
