@@ -1,0 +1,76 @@
+<!DOCTYPE HTML> 
+<html> 
+
+<head> 
+<link rel="stylesheet" href="messages.css"> 
+<meta charset="utf-8"> 
+    <style>
+    body { 
+margin: 10px auto; 
+width: 470px; 
+} 
+
+h3 { 
+margin: 0; 
+padding-bottom: .3em; 
+padding-right: 20px; 
+font-size: 1.1em; 
+} 
+
+p { 
+margin: 0; 
+padding: 0 0 .5em; 
+} 
+
+.pane { 
+background: yellow; 
+padding: 10px 20px 10px; 
+border-top: solid 2px #c4df9b; 
+position: relative; 
+} 
+
+.remove-button { 
+position: absolute; 
+font-size: 110%; 
+top: 0; 
+color: darkred; 
+right: 10px; 
+display: block; 
+width: 24px; 
+height: 24px; 
+border: none; 
+background: transparent; 
+cursor: pointer; 
+}
+    </style>
+</head> 
+
+<body> 
+
+<div> 
+<div class="pane"> 
+<h3>Александра</h3> 
+<p>Имя красивое, хорошее даже, но только не человек, который носит его, я всегда очно получал в дыхательное сплетение, вы думаете она девочка? Вы далеко ошибаетесь.</p> 
+</div> 
+<div class="pane"> 
+<h3>Кудряшова</h3> 
+<p>Страшный человек, зачем я вообще связался с ней.</p> 
+</div> 
+<div class="pane"> 
+<h3>Не умеет считать факториал 35</h3> 
+<p>В наше время стыдно не уметь считать такой маленький факториал в уме, я считаю, это далеко не лояльно, я на АОД строил дерево из 30 элементов, а она пошутила про пиво и ей поставили зачет, а Степа начал говорить мне числа свыше 10000, чтобы я строил дерево руками</p> 
+</div> 
+</div> 
+
+
+<script> 
+let panes = document.querySelectorAll('.pane'); 
+
+for(let pane of panes) { 
+pane.insertAdjacentHTML("afterbegin", '<button class="remove-button">[x]</button>'); 
+pane.firstChild.onclick = () => pane.remove(); 
+} 
+</script> 
+
+</body> 
+</html>
