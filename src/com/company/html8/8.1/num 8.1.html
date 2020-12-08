@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+ #tachka 
+{
+position: relative;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+<img id="tachka" src="https://lh3.googleusercontent.com/proxy/gQAE56rjvoUcx1yLYevutTnSrQ5Fu5X2eRdCvpRmCPCVZP-FM6nJHuiYMkp8sZx-vT3aa_qeCJs95YlWDxWysCu5n48" width="150" height="150">
+<script>
+tachka.onclick = function() {
+let start = Date.now();
+let timer = setInterval(function() {
+let timePassed = Date.now() - start;
+tachka.style.left = timePassed / 5 + 'px';
+if (timePassed > 2000) clearInterval(timer);
+}, 20);
+}
+</script>
+</body>
+</html>
